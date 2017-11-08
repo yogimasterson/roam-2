@@ -1,0 +1,13 @@
+{
+    "dev": {
+        "driver": "pg",
+        "database": "roam2",
+        "port": "5432"
+    },
+    "test": {
+        "driver": "pg",
+        "database": "roam2_test",
+        "port": "5432"
+    },
+    "sql-file": true
+}

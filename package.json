@@ -4,7 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon app.js",
+    "start": "nodemon src/app.js",
+    "db:migrate": "db-migrate up --config src/config/db-migrate.json -e",
+    "db:rollback": "db-migrate down $1",
+    "load-schema": "psql roam2 < src/models/db/schema.sql",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -18,7 +21,11 @@
   },
   "homepage": "https://github.com/yogimasterson/roam-2#readme",
   "dependencies": {
-    "express": "^4.16.2"
+    "connect-pg-simple": "^4.2.1",
+    "db-migrate": "^0.10.0-beta.24",
+    "db-migrate-pg": "^0.2.5",
+    "express": "^4.16.2",
+    "pg": "^7.3.0"
   },
   "devDependencies": {
     "nodemon": "^1.12.1"
