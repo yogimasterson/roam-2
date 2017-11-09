@@ -1,5 +1,5 @@
 {
-  "name": "roam-2",
+  "name": "lyte-travel",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -7,7 +7,6 @@
     "start": "nodemon src/app.js",
     "db:migrate": "db-migrate up --config src/config/db-migrate.json -e",
     "db:rollback": "db-migrate down $1",
-    "load-schema": "psql roam2 < src/models/db/schema.sql",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

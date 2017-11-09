@@ -6,7 +6,7 @@ const saltRounds = 10
 
 const create = (username, password) => {
     bcrypt.hash(password, saltRounds).then((hash) => {
-        reture db.query(`
+        return db.query(`
         INSERT INTO users
         (username, encrypted_password)
         VALUES
@@ -28,7 +28,22 @@ const create = (username, password) => {
     })
 }
 
-// find user
+// find user by id
+
+const findUserById = (id) => {
+    return db.query(`
+    SELECT *
+    FROM users
+    `)
+}
+
+// const findUserById = (username, password) => {
+//     return db.query(`
+//     SELECT
+//     `)
+// }
+
+// get user name
 
 // update username 
 

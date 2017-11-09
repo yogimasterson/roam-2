@@ -1,3 +1,5 @@
+/* Replace with your SQL commands */
+
 DROP TABLE IF EXISTS cities;
 
 DROP TABLE IF EXISTS users;
