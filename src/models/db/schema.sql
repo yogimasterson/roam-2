@@ -12,7 +12,7 @@ CREATE TABLE users(
     username VARCHAR(255) UNIQUE NOT NULL,
     encrypted_password VARCHAR(255) NOT NULL,
     image TEXT,
-    join_date TIMESTAMP(6) WITH TIME ZONE NOT NULL,
+    join_date TIMESTAMP(6) DEFAULT now(),
     cities_id INT REFERENCES cities
 );
 

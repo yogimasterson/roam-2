@@ -21,13 +21,32 @@
   },
   "homepage": "https://github.com/yogimasterson/roam-2#readme",
   "dependencies": {
+    "bcrypt": "^1.0.3",
+    "body-parser": "^1.18.1",
+    "connect-ensure-login": "^0.1.1",
     "connect-pg-simple": "^4.2.1",
+    "cookie-parser": "^1.4.3",
     "db-migrate": "^0.10.0-beta.24",
     "db-migrate-pg": "^0.2.5",
-    "express": "^4.16.2",
-    "pg": "^7.3.0"
+    "dotenv": "^4.0.0",
+    "ejs": "^2.5.7",
+    "express": "^4.15.4",
+    "express-session": "^1.15.5",
+    "method-override": "^2.3.9",
+    "moment": "^2.18.1",
+    "npm": "^5.4.2",
+    "passport": "^0.4.0",
+    "passport-local": "^1.0.0",
+    "pg": "^7.3.0",
+    "pg-promise": "^6.7.1"
   },
   "devDependencies": {
+    "chai": "^4.1.2",
+    "chai-http": "^3.0.0",
+    "eslint": "^4.8.0",
+    "eslint-config-airbnb-base": "^12.0.2",
+    "eslint-plugin-import": "^2.7.0",
+    "mocha": "^4.0.1",
     "nodemon": "^1.12.1"
   }
 }
